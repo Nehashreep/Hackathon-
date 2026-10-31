@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgriValue AI | Surplus Value Advisor</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <header class="navbar">
+        <div class="logo">🌱 AgriValue AI</div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#advisor">Surplus Advisor</a>
+            <a href="#about">About</a>
+        </nav>
+
+        <button class="nav-button" onclick="scrollToAdvisor()">
+            Get Started
+        </button>
+    </header>
+
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+            <p class="tagline">SMART AGRICULTURE • BETTER VALUE</p>
+
+            <h1>
+                Turn Agricultural Surplus
+                Into <span>Opportunity.</span>
+            </h1>
+
+            <p class="hero-description">
+                Discover alternative uses, potential buyers and
+                estimated value for your agricultural surplus
+                with the help of AgriValue AI.
+            </p>
+
+            <button class="primary-button" onclick="scrollToAdvisor()">
+                Explore Your Surplus →
+            </button>
+        </div>
+
+        <div class="hero-image">
+            <div class="hero-icon">🌾</div>
+            <h3>Waste Less. Value More.</h3>
+            <p>Smart solutions for sustainable agriculture.</p>
+        </div>
+
+    </section>
+
+
+    <!-- Features -->
+    <section class="features">
+
+        <div class="feature-card">
+            <div class="feature-icon">♻️</div>
+            <h3>Alternative Uses</h3>
+            <p>Find useful applications for agricultural surplus.</p>
+        </div>
+
+        <div class="feature-card">
+            <div class="feature-icon">🤝</div>
+            <h3>Buyer Matching</h3>
+            <p>Discover potential buyers and processing opportunities.</p>
+        </div>
+
+        <div class="feature-card">
+            <div class="feature-icon">💰</div>
+            <h3>Value Estimation</h3>
+            <p>Understand the indicative value of your surplus.</p>
+        </div>
+
+    </section>
+
+
+    <!-- Surplus Advisor -->
+    <section class="advisor-section" id="advisor">
+
+        <div class="section-heading">
+            <p class="tagline">AI-POWERED SURPLUS ANALYSIS</p>
+            <h2>Analyze Your Agricultural Surplus</h2>
+            <p>Enter your surplus details to explore possible opportunities.</p>
+        </div>
+
+        <div class="advisor-container">
+
+            <form id="surplusForm">
+
+                <div class="form-group">
+                    <label for="material">Agricultural Material</label>
+
+                    <select id="material" required>
+                        <option value="">Select material</option>
+                        <option value="Banana Stems">Banana Stems</option>
+                        <option value="Rice Straw">Rice Straw</option>
+                        <option value="Sugarcane Bagasse">Sugarcane Bagasse</option>
+                        <option value="Coconut Husk">Coconut Husk</option>
+                        <option value="Vegetable Waste">Vegetable Waste</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+
+
+                <div class="form-group">
+                    <label for="quantity">Quantity (in kg)</label>
+
+                    <input
+                        type="number"
+                        id="quantity"
+                        placeholder="Enter quantity"
+                        min="0.1"
+                        step="0.1"
+                        required
+                    >
+                </div>
+
+
+                <div class="form-group">
+                    <label for="location">Location</label>
+
+                    <input
+                        type="text"
+                        id="location"
+                        placeholder="Example: Mysuru, Karnataka"
+                        required
+                    >
+                </div>
+
+
+                <div class="form-group">
+                    <label for="condition">Material Condition</label>
+
+                    <select id="condition" required>
+                        <option value="">Select condition</option>
+                        <option value="Fresh">Fresh</option>
+                        <option value="Dry">Dry</option>
+                        <option value="Wet">Wet</option>
+                        <option value="Damaged">Damaged</option>
+                    </select>
+                </div>
+
+
+                <button type="submit" class="primary-button analyze-button">
+                    Analyze My Surplus →
+                </button>
+
+            </form>
+
+
+            <!-- Results Section -->
+            <div class="results-container" id="results">
+
+                <div class="empty-result">
+                    <div class="result-icon">🌱</div>
+
+                    <h3>Your Results Will Appear Here</h3>
+
+                    <p>
+                        Enter your agricultural surplus details
+                        and click Analyze My Surplus.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+
+        <p class="tagline">OUR PURPOSE</p>
+
+        <h2>Making Agriculture More Sustainable</h2>
+
+        <p>
+            AgriValue AI aims to reduce agricultural waste by
+            helping farmers discover alternative uses, connect
+            with potential buyers and understand the possible
+            value of surplus materials.
+        </p>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+        <h3>🌱 AgriValue AI</h3>
+        <p>Turning Agricultural Surplus Into Value.</p>
+        <p>© 2026 AgriValue AI. All rights reserved.</p>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
